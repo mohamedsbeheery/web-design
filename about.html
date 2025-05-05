@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About – Our Project</title>
+  <meta name="description" content="Learn about our student team and project goals.">
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container">
+      <h1>Our Project</h1>
+      <button class="hamburger" aria-label="Toggle navigation"><div></div><div></div><div></div></button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <h2>About Us</h2>
+    <p>Our team consists of dedicated students passionate about web development and design. This project is a demonstration of our collective skills.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Project Team - Supervised by Dr. Manal</p>
+  </footer>
+  <script>
+    const btn = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-list');
+    btn.addEventListener('click', () => { nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex'; });
+  </script>
+</html>

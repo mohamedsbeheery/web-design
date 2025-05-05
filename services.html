@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services – Our Project</title>
+  <meta name="description" content="Discover the services we offer.">
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container">
+      <h1>Our Project</h1>
+      <button class="hamburger" aria-label="Toggle navigation"><div></div><div></div><div></div></button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Responsive Web Design</li>
+      <li>Accessibility Audits</li>
+      <li>SEO Optimization</li>
+      <li>Front-end Development</li>
+      <li>Back-end API Integration</li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Project Team - Supervised by Dr. Manal</p>
+  </footer>
+  <script>
+    const btn = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-list');
+    btn.addEventListener('click', () => { nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex'; });
+  </script>
+</html>
